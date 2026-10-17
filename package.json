@@ -1,0 +1,25 @@
+{
+  "name": "category-theory-intro",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "slidev",
+    "build": "slidev build",
+    "typecheck": "vue-tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "dependencies": {
+    "vue": "3.5.44"
+  },
+  "devDependencies": {
+    "@slidev/cli": "53.0.0",
+    "typescript": "~5.9.3",
+    "vue-tsc": "3.3.13"
+  },
+  "overrides": {
+    "floating-vue": "5.2.2"
+  }
+}

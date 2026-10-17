@@ -1,0 +1,34 @@
+.map-diagram { display: block; width: 100%; height: 100%; overflow: visible; }
+.map-diagram text { font-family: var(--font-math); font-size: var(--diagram-label-size); fill: currentColor; }
+.map-diagram .set-label { font-size: var(--diagram-set-label-size); font-style: italic; }
+.map-diagram .map-formula { font-size: var(--diagram-formula-size); }
+.map-domain { color: var(--color-object-a); }
+.map-codomain { color: var(--color-object-b); }
+.map-point { r: var(--diagram-point-radius); fill: currentColor; }
+.map-outline, .map-arrow {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: var(--diagram-stroke-width);
+  stroke-linecap: var(--diagram-linecap);
+  stroke-linejoin: round;
+}
+.map-outline { transform-box: fill-box; transform-origin: center; transform: rotate(var(--diagram-set-tilt)); }
+.map-arrow-group, .map-formula { color: var(--color-map); }
+.map-arrow-head { fill: var(--color-map); }
+.map-animated .map-point-row {
+  transition: transform var(--motion-normal) var(--motion-easing);
+}
+.map-animated .map-point-row:first-child { transform: translateY(var(--diagram-spread)); }
+.map-animated .map-point-row:last-child { transform: translateY(calc(-1 * var(--diagram-spread))); }
+.map-animated.is-enclosed .map-point-row { transform: translateY(0); }
+.map-animated .point-reveal {
+  transition: opacity var(--motion-fast), transform var(--motion-normal) var(--motion-easing);
+}
+.map-animated .point-reveal.slidev-vclick-hidden { transform: translateY(var(--diagram-entry-offset)); }
+.map-animated .map-arrow {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset var(--motion-normal) var(--motion-easing);
+}
+.map-animated .slidev-vclick-hidden .map-arrow { stroke-dashoffset: 1; }
+.map-arrow-head { transition: opacity var(--motion-fast); }

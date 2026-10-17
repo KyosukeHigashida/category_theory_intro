@@ -1,0 +1,46 @@
+.slidev-layout {
+  font-family: var(--font-body);
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+  color: var(--color-text);
+}
+
+.slidev-layout h1,
+.slidev-layout h2,
+.slidev-layout h3 {
+  font-family: var(--font-heading);
+  font-weight: var(--heading-weight);
+  line-height: var(--line-height-heading);
+}
+.slidev-layout h1 { font-size: var(--font-size-title); margin: 0 0 var(--title-gap); }
+.slidev-layout h2 { font-size: var(--font-size-subtitle); margin: 0 0 var(--paragraph-gap); }
+.slidev-layout h3 { font-size: var(--font-size-body); margin: 0 0 var(--paragraph-gap); }
+.slidev-layout p { margin: 0 0 var(--paragraph-gap); }
+.slidev-layout strong { font-weight: 700; }
+.slidev-layout ul, .slidev-layout ol { padding-left: 1.5em; margin: 0; }
+.slidev-layout ul { list-style: disc; }
+.slidev-layout ol { list-style: decimal; }
+.slidev-layout li { padding-left: 0.25em; margin-bottom: var(--list-gap); }
+.slidev-layout a { color: var(--color-accent); text-decoration: underline; }
+.slidev-layout blockquote { margin: var(--paragraph-gap) 0; padding-left: 1em; border-left: 1px solid var(--color-rule); }
+.slidev-layout .katex { font-family: var(--font-math); font-size: var(--font-size-math); }
+.slidev-layout .katex-display { margin: var(--paragraph-gap) 0; }
+.slidev-layout .katex-display > .katex { text-align: left; }
+.slidev-layout.center .katex-display > .katex { text-align: center; }
+.slidev-layout pre, .slidev-layout code { font-family: var(--font-code); font-size: var(--font-size-code); }
+.slidev-layout pre {
+  padding: var(--code-padding);
+  line-height: 1.6;
+  border-radius: 0;
+  box-shadow: none;
+  border-top: 1px solid var(--color-rule);
+  border-bottom: 1px solid var(--color-rule);
+  background: var(--color-background) !important;
+}
+.slidev-layout :not(pre) > code { background: transparent; }
+.slidev-layout .slidev-code { background: transparent !important; }
+
+.lecture-title h1 { font-size: var(--font-size-cover); }
+.lecture-title h2 { margin-bottom: calc(var(--title-gap) * 1.5); }
+.lecture-title p { font-size: var(--font-size-small); color: var(--color-muted); }
+.lecture-outline li { margin-bottom: calc(var(--list-gap) * 1.3); }
